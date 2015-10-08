@@ -1,0 +1,115 @@
+@redbox: #DC2400;
+@greenbox: #00853E;
+@bluebox: #008FC4;
+@greybox: #595959;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.wrapper {
+    width: 1050px;
+    height: 555px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    img {
+        position: absolute;
+        margin-top: -75px;
+        left: 300px;
+    }
+    .container {
+        width: 250px;
+        display: inline-block;
+        height: 405px;
+        box-shadow: 2px 2px 2px 1px #ccc;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        transition: all .2s ease-in-out;
+        background: #fff;
+    }
+    .container:nth-child(2) h1 {
+        background:@redbox;
+    }
+    .container:nth-child(3) h1 {
+        background:@greenbox;
+    }
+    .container:nth-child(4) h1 {
+        background:@bluebox;
+    }
+    .container:last-child h1 {
+        background:@greybox;
+    }
+    
+    .container:nth-child(2) .choose-plan{
+         background:@redbox;   
+    }
+    
+   .container:nth-child(3) .choose-plan{
+         background:@greenbox;   
+    }
+    
+    .container:nth-child(4) .choose-plan{
+         background:@bluebox;   
+    }
+    
+    .container:last-child .choose-plan{
+         background:@greybox;   
+    }
+
+    .container:hover {
+        transform: scale(1.1);
+    }
+ 	h1 {   
+        text-transform: uppercase; 
+        font-weight: 400;
+        font-size: 20px;
+        color: #fff;
+        padding: 15px 0;
+        margin-top: 0;
+        border-radius: 4px 4px 0 0;
+        }
+
+    .price {
+        font-weight: 400;
+            font-size: 30px;
+        }
+
+        .month {
+            text-transform: uppercase;
+            }
+        
+        .mins {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: -1px;
+            display: inline-block;
+            margin-top: -5px;
+        }
+
+        .offer {
+            font-weight: 800; 
+        }
+
+        .extensions {
+            font-weight: 400;   
+        }
+
+        .choose-plan {
+            padding: 10px 30px;
+            color: #fff;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 1px 0 2px 0;
+        }
+    
+        #grey {
+            background: #595959;
+        }
+
+        .strike {
+            text-decoration: line-through;
+        }
+}
